@@ -1,13 +1,17 @@
 import React from 'react';
-import './App.scss';
+import './app.scss';
+import Header from './Header/Header';
 import Earth from './EarthComponent/Earth';
-import SearchingCities from './SearchingCompotents/SearchingCities';
+import SearchingCities from './SearchingComponents/SearchingCities';
 
 function App() {
   return (
-    <div className="App">
-      <Earth />
-      <SearchingCities />
+    <div className="app">
+      <Header />
+      <div className="search-container">
+        <Earth />
+        <SearchingCities />
+      </div>
     </div>
   );
 }

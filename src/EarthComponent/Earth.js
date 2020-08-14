@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactGlobe from 'react-globe';
 import './earth.scss';
+import globeTexture from '../imgs/globe3.png';
 
 const Earth = () => {
   return (
@@ -9,8 +10,11 @@ const Earth = () => {
         width="600px"
         height="600px"
         globeBackgroundTexture="none"
+        globeTexture={globeTexture}
         options={{
           enableCameraZoom: false,
+          ambientLightIntensity: 0.6,
+          ambientLightColor: '#dbcca0',
         }}
         markers={[
           {

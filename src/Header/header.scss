@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+.header {
+  background-image: url('../pngs/background.png');
+  background-color: #e9f6ff;
+  height: 100vh;
+  display: flexbox;
+  align-items: center;
+  .title {
+    text-align: center;
+    font-size: 70px;
+    line-height: 90px;
+    padding: 0 200px;
+    padding-top: calc(50vh - 90px);
+    font-family: 'Capriola', sans-serif;
+  }
+}
