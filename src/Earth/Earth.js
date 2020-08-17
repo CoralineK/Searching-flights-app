@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGlobe from 'react-globe';
 import './earth.scss';
-import globeTexture from '../imgs/globe3.png';
+import globeTexture from '../images/imgs/globe3.png';
 
 const Earth = () => {
   return (
