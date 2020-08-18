@@ -1,4 +1,5 @@
 import * as data from './secrets.json';
+
 const CLIENT_ID = data.client_ID;
 const CLIENT_SECRET = data.client_secret;
 const GRANT_TYPE = 'client_credentials';
@@ -47,3 +48,21 @@ export async function getAirports() {
 
   return result;
 }
+
+// import { getAirports } from '../api/airports';
+
+// const [error, setError] = useState();
+// const [airports, setAirports] = useState();
+// useEffect(() => {
+//   getAirports()
+//     .then((res) => setAirports(res))
+//     .catch((err) => setError(err));
+// }, []);
+
+// if (!airports && !error) {
+//   return <div>Loading</div>;
+// }
+
+// if (error) {
+//   return <div>Sorry, there has been an error</div>;
+// }
