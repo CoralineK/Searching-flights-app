@@ -1,0 +1,77 @@
+@import '../../style/reset.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@mixin font {
+  font-size: 25px;
+  font-family: 'Abel', sans-serif;
+}
+
+@mixin inputs {
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  @include font;
+}
+
+.search-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__inside {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.chosen {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__describ {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5;
+    @include font;
+    p {
+      @include font;
+      text-align: end;
+      text-align: top;
+      width: 10%;
+    }
+    div {
+      width: 90%;
+      padding: 10px 20px;
+      text-align: start;
+    }
+  }
+}
+
+.confirm {
+  @include font;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.globe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  canvas {
+    outline: none;
+  }
+}

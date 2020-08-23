@@ -1,46 +1,79 @@
 @import '../../style/reset.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-@mixin common {
+@mixin font {
+  font-size: 25px;
+  font-family: 'Abel', sans-serif;
+}
+
+@mixin inputs {
   padding: 10px;
   margin: 10px 0;
   outline: none;
-  font-size: 25px;
-  font-family: 'Patrick Hand', cursive;
+  @include font;
 }
 
 .choice {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  padding: 0 5%;
-  width: 50%;
+  align-items: center;
+  padding: 5% 0;
+  width: 100%;
   background-color: #d7dadb;
-  &__city {
-    @include common;
-    width: 80%;
+  &__input-wrapper {
+    width: 850px;
+    margin: 10px 0;
+  }
+  &__city-input {
+    @include inputs;
+    position: relative;
+    margin: 0;
+    width: 100%;
     border-radius: 5px;
     border: 1px solid gray;
   }
+  &__autocomplete {
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    width: 850px;
+    .location {
+      cursor: pointer;
+      font-family: 'Abel', sans-serif;
+      font-size: 20px;
+      padding: 5px 10px;
+      border-bottom: 0.5px solid rgb(150, 150, 150);
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+        background-color: rgb(115, 185, 255);
+      }
+    }
+  }
   &__confirm {
-    @include common;
+    @include inputs;
     cursor: pointer;
     padding: 15px 50px;
-    background-color: #008cba;
+    background-color: dodgerblue;
     color: white;
     border: none;
     border-radius: 10px;
   }
-  &__describ {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   p {
-    font-size: 30px;
-    font-family: 'Patrick Hand', cursive;
+    @include font;
   }
+}
+
+.error {
+  @include font;
+  color: #c42419;
+  padding-top: 20px;
+}
+
+.input-error {
+  border-color: #c42419;
 }
