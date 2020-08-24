@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style/chosen.scss';
 import Earth from './Earth';
 
@@ -27,7 +27,7 @@ const ChosenCities = ({ fromCity, toCity, onBack, location }) => {
           </div>
         </div>
         <div className="globe-container">
-          <Earth location={location} />
+          <Earth location={location} fromCity={fromCity} toCity={toCity} />
         </div>
       </div>
     </>
