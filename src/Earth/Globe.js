@@ -16,9 +16,9 @@ const Globe = ({ onLoaded, location, fromCity, toCity }) => {
 
   let numPoints = 0;
   if (dLong > dLat) {
-    numPoints = Math.round(dLong);
+    numPoints = Math.round(dLong) / 2;
   } else {
-    numPoints = Math.round(dLat);
+    numPoints = Math.round(dLat) / 2;
   }
 
   const partOfLat = dLat / numPoints;
@@ -72,6 +72,8 @@ const Globe = ({ onLoaded, location, fromCity, toCity }) => {
     }
   }, [texture, clouds, onLoaded]);
 
+  useEffect(() => {}, []);
+
   const markerCallback = (marker, markerObject, event) => {};
 
   return (
@@ -83,6 +85,7 @@ const Globe = ({ onLoaded, location, fromCity, toCity }) => {
       globeBackgroundTexture="none"
       globeTexture={globeTexture}
       options={{
+        focusDistanceRadiusScale: 3,
         enableCameraZoom: false,
         ambientLightIntensity: 0.6,
         ambientLightColor: '#dbcca0',
@@ -100,19 +103,20 @@ const Globe = ({ onLoaded, location, fromCity, toCity }) => {
           }
         },
       }}
+      focus={locTo}
       onMouseOverMarker={markerCallback}
       markers={[
         {
           id: 'city1',
-          color: 'yellow',
+          color: 'red',
           coordinates: locFrom,
-          value: 50,
+          value: 20,
         },
         {
           id: 'city2',
           color: 'red',
           coordinates: locTo,
-          value: 50,
+          value: 20,
         },
         ...points,
       ]}

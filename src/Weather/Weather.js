@@ -25,7 +25,6 @@ const Weather = ({ location }) => {
       tempratureFeels: 0,
     };
 
-    console.log(weatherTo);
     details.city = '';
     details.iconID = weatherTo.weather[0].icon;
     details.main = weatherTo.weather[0].main;

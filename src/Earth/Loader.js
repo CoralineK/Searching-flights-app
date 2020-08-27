@@ -5,7 +5,7 @@ import { faCompass } from '@fortawesome/free-solid-svg-icons';
 
 const Loader = () => {
   const compassStyle = {
-    color: 'dodgerblue',
+    color: '#116466',
     width: '100px',
     height: '100px',
   };

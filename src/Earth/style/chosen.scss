@@ -27,6 +27,7 @@
 
 .chosen {
   width: 80%;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,17 +60,21 @@
   cursor: pointer;
   padding: 15px 25px;
   background-color: #116466;
-  color: #ffcb9a;
+  color: white;
   border: none;
   border-radius: 10px;
 }
 
 .globe-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  height: 85vh;
+  margin: 0 auto;
   canvas {
     outline: none;
+    // margin: 0 auto;
   }
+}
+
+.weather-container {
+  width: 100%;
+  background-color: #116466;
 }
