@@ -1,4 +1,4 @@
-This is simple project to help planning your travels. You can check places where are airports.
+This is simple project to help planning your travels.
 
 ### `npm start`
 
