@@ -77,8 +77,8 @@ const SearchingCities = () => {
         autocomplete={getAirportsByCityName(city.from)}
         select={handleFromClick}
       />
-      <p>Where do you want to go?</p>
 
+      <p>Where do you want to go?</p>
       <CityInput
         placeholder="Type name of city"
         value={city.to}

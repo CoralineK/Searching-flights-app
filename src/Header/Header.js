@@ -10,14 +10,17 @@ const Header = () => {
   };
 
   return (
-    <div className="background">
-      <div className="header">
-        <h1 className="header__title">
-          Find YOUR perfect connection with the world!
-        </h1>
+    <div className="header">
+      <h1 className="title">
+        <p>comfortable</p>
+        <p className="title__accent">traveling</p>
+        <p>fly wherever you want</p>
+      </h1>
+
+      <div className="start">
         <p>Let's start!</p>
         <a href="#search">
-          <div className="header__arrow">
+          <div className="arrow">
             <FontAwesomeIcon style={iconStyle} icon={faChevronCircleDown} />
           </div>
         </a>

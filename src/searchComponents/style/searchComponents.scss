@@ -1,11 +1,4 @@
-@import '../../style/reset.scss';
-
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
-@mixin font {
-  font-size: 25px;
-  font-family: 'Abel', sans-serif;
-}
+@import '../../style/fonts.scss';
 
 @mixin inputs {
   padding: 10px;
@@ -22,13 +15,14 @@
   align-items: center;
   padding: 5% 0;
   width: 100%;
-  background-color: #d7dadb;
+  background-color: white;
   &__input-wrapper {
-    width: 850px;
-    margin: 10px 0;
+    width: 750px;
+    margin: 10px 0 30px 0;
   }
   &__city-input {
     @include inputs;
+    font-family: 'Open Sans Condensed', sans-serif;
     position: relative;
     margin: 0;
     width: 100%;
@@ -38,11 +32,11 @@
   &__autocomplete {
     position: absolute;
     z-index: 5;
-    background-color: white;
-    width: 850px;
+    background-color: #d1e8e2;
+    width: 750px;
     .location {
       cursor: pointer;
-      font-family: 'Abel', sans-serif;
+      font-family: 'Open Sans Condensed', sans-serif;
       font-size: 20px;
       padding: 5px 10px;
       border-bottom: 0.5px solid rgb(150, 150, 150);
@@ -50,16 +44,17 @@
         border: none;
       }
       &:hover {
-        background-color: rgb(115, 185, 255);
+        background-color: #ffcb9a;
       }
     }
   }
   &__confirm {
     @include inputs;
+    font-weight: 500;
     cursor: pointer;
     padding: 15px 50px;
-    background-color: dodgerblue;
-    color: white;
+    background-color: #116466;
+    color: #ffcb9a;
     border: none;
     border-radius: 10px;
   }

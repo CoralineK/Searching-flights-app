@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/chosen.scss';
 import Earth from './Earth';
+import Weather from '../Weather/Weather';
 
 const ChosenCities = ({ fromCity, toCity, onBack, location }) => {
   return (
@@ -28,6 +29,7 @@ const ChosenCities = ({ fromCity, toCity, onBack, location }) => {
         </div>
         <div className="globe-container">
           <Earth location={location} fromCity={fromCity} toCity={toCity} />
+          <Weather location={location} />
         </div>
       </div>
     </>

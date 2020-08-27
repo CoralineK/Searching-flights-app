@@ -1,0 +1,23 @@
+@import '../style/reset.scss';
+@import '../style/fonts.scss';
+
+.weather {
+  @include font;
+  background-color: #ffcb9a;
+  padding: 100px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 50px;
+  }
+  &__icon {
+    text-align: center;
+  }
+  p {
+    padding: 10px;
+  }
+}

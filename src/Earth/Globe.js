@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactGlobe from 'react-globe';
 import './style/chosen.scss';
-import globeTexture from '../images/imgs/globe3.png';
+import globeTexture from '../0_images/imgs/globe3.png';
 
 const Globe = ({ onLoaded, location, fromCity, toCity }) => {
   const [texture, setTexture] = useState(true);
@@ -39,23 +39,23 @@ const Globe = ({ onLoaded, location, fromCity, toCity }) => {
   }
 
   if (arr1 < arr2) {
-    arr1.map((_, i) => {
+    arr1.map((_, i) =>
       points.push({
         id: `${i}`,
         color: 'black',
         coordinates: [arr1[i], arr2[i]],
         value: 1,
-      });
-    });
+      })
+    );
   } else {
-    arr2.map((_, i) => {
+    arr2.map((_, i) =>
       points.push({
         id: `${i}`,
         color: 'black',
         coordinates: [arr1[i], arr2[i]],
         value: 1,
-      });
-    });
+      })
+    );
   }
   // end
 
@@ -70,7 +70,7 @@ const Globe = ({ onLoaded, location, fromCity, toCity }) => {
     if (!texture && !clouds) {
       onLoaded();
     }
-  }, [texture, clouds]);
+  }, [texture, clouds, onLoaded]);
 
   const markerCallback = (marker, markerObject, event) => {};
 

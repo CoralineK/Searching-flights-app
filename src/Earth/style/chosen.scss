@@ -1,11 +1,5 @@
 @import '../../style/reset.scss';
-
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
-@mixin font {
-  font-size: 25px;
-  font-family: 'Abel', sans-serif;
-}
+@import '../../style/fonts.scss';
 
 @mixin inputs {
   padding: 10px;
@@ -20,8 +14,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   &__inside {
+    background-color: #d1e8e2;
+    padding: 50px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -58,19 +54,21 @@
 
 .confirm {
   @include font;
+  font-weight: 500;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  color: white;
+  padding: 15px 25px;
+  background-color: #116466;
+  color: #ffcb9a;
   border: none;
   border-radius: 10px;
 }
 
 .globe-container {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   canvas {
     outline: none;
   }
