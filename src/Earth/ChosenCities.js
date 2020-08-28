@@ -29,9 +29,7 @@ const ChosenCities = ({ fromCity, toCity, onBack, location }) => {
         </div>
         <div className="globe-container">
           <Earth location={location} fromCity={fromCity} toCity={toCity} />
-        </div>
-        <div className="weather-container">
-          <Weather location={location} />
+          <Weather location={location} toCity={toCity} />
         </div>
       </div>
     </>

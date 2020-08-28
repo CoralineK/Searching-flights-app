@@ -1,4 +1,3 @@
-@import '../../style/reset.scss';
 @import '../../style/fonts.scss';
 
 @mixin inputs {
@@ -17,8 +16,7 @@
   justify-content: flex-start;
   &__inside {
     background-color: #d1e8e2;
-    padding: 50px;
-    height: 100%;
+    padding: 50px 10%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,7 +24,7 @@
 }
 
 .chosen {
-  width: 80%;
+  width: 100%;
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -66,15 +64,32 @@
 }
 
 .globe-container {
-  height: 85vh;
-  margin: 0 auto;
-  canvas {
-    outline: none;
-    // margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  .earth-container {
+    margin: 0 auto;
+    canvas {
+      outline: none;
+    }
   }
 }
 
-.weather-container {
-  width: 100%;
-  background-color: #116466;
+@media (max-width: 1200px) {
+  .globe-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-container {
+    &__inside {
+      flex-direction: column;
+    }
+  }
+  .globe-container {
+    padding: 0;
+  }
 }

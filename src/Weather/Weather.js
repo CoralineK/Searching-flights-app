@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './weather.scss';
 import secret from './secret.json';
 
-const Weather = ({ location }) => {
+const Weather = ({ location, toCity }) => {
   const [weatherTo, setWeatherTo] = useState();
+  const weather = toCity.split(', ')[0];
 
   useEffect(() => {
     const currentWeather = async () => {
@@ -23,6 +24,7 @@ const Weather = ({ location }) => {
       iconID: '',
       temprature: 0,
       tempratureFeels: 0,
+      wind: 0,
     };
 
     details.city = '';
@@ -30,10 +32,11 @@ const Weather = ({ location }) => {
     details.main = weatherTo.weather[0].main;
     details.temprature = Math.round(weatherTo.main.temp - 272.15);
     details.pressure = weatherTo.main.pressure;
+    details.wind = weatherTo.wind.speed;
 
     return (
       <div className="weather">
-        <h1>Weather</h1>
+        <h1>Weather in {weather}</h1>
         <div className="weather__details">
           <p>{details.main}</p>
           <div className="weather__icon">
@@ -44,6 +47,7 @@ const Weather = ({ location }) => {
           </div>
           <p>Temprature: {details.temprature} &deg;C</p>
           <p>Pressure: {details.pressure} hPa</p>
+          <p>Wind: {details.wind} m/s</p>
         </div>
       </div>
     );
