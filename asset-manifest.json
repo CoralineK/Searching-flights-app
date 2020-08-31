@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/CoralineK/Searching-flights-app/static/css/main.7fe83ace.chunk.css",
-    "main.js": "/CoralineK/Searching-flights-app/static/js/main.fd6e1949.chunk.js",
-    "main.js.map": "/CoralineK/Searching-flights-app/static/js/main.fd6e1949.chunk.js.map",
-    "runtime-main.js": "/CoralineK/Searching-flights-app/static/js/runtime-main.2005ba2a.js",
-    "runtime-main.js.map": "/CoralineK/Searching-flights-app/static/js/runtime-main.2005ba2a.js.map",
-    "static/js/2.4f153d89.chunk.js": "/CoralineK/Searching-flights-app/static/js/2.4f153d89.chunk.js",
-    "static/js/2.4f153d89.chunk.js.map": "/CoralineK/Searching-flights-app/static/js/2.4f153d89.chunk.js.map",
-    "index.html": "/CoralineK/Searching-flights-app/index.html",
-    "precache-manifest.c9b2f5cef0337035b39b485c13ab82f8.js": "/CoralineK/Searching-flights-app/precache-manifest.c9b2f5cef0337035b39b485c13ab82f8.js",
-    "service-worker.js": "/CoralineK/Searching-flights-app/service-worker.js",
-    "static/css/main.7fe83ace.chunk.css.map": "/CoralineK/Searching-flights-app/static/css/main.7fe83ace.chunk.css.map",
-    "static/js/2.4f153d89.chunk.js.LICENSE.txt": "/CoralineK/Searching-flights-app/static/js/2.4f153d89.chunk.js.LICENSE.txt",
-    "static/media/globe3.png": "/CoralineK/Searching-flights-app/static/media/globe3.93f09e7e.png"
+    "main.css": "/Searching-flights-app/static/css/main.7fe83ace.chunk.css",
+    "main.js": "/Searching-flights-app/static/js/main.fd6e1949.chunk.js",
+    "main.js.map": "/Searching-flights-app/static/js/main.fd6e1949.chunk.js.map",
+    "runtime-main.js": "/Searching-flights-app/static/js/runtime-main.3efcca77.js",
+    "runtime-main.js.map": "/Searching-flights-app/static/js/runtime-main.3efcca77.js.map",
+    "static/js/2.4f153d89.chunk.js": "/Searching-flights-app/static/js/2.4f153d89.chunk.js",
+    "static/js/2.4f153d89.chunk.js.map": "/Searching-flights-app/static/js/2.4f153d89.chunk.js.map",
+    "index.html": "/Searching-flights-app/index.html",
+    "precache-manifest.7d6f2dad0892b40a9d7096ea7c33d2d0.js": "/Searching-flights-app/precache-manifest.7d6f2dad0892b40a9d7096ea7c33d2d0.js",
+    "service-worker.js": "/Searching-flights-app/service-worker.js",
+    "static/css/main.7fe83ace.chunk.css.map": "/Searching-flights-app/static/css/main.7fe83ace.chunk.css.map",
+    "static/js/2.4f153d89.chunk.js.LICENSE.txt": "/Searching-flights-app/static/js/2.4f153d89.chunk.js.LICENSE.txt",
+    "static/media/globe3.png": "/Searching-flights-app/static/media/globe3.93f09e7e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2005ba2a.js",
+    "static/js/runtime-main.3efcca77.js",
     "static/js/2.4f153d89.chunk.js",
     "static/css/main.7fe83ace.chunk.css",
     "static/js/main.fd6e1949.chunk.js"
